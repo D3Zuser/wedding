@@ -80,15 +80,19 @@ transform:rotate(180deg);
 /* бантик сверху */
 
 .bow-wrap{
-text-align:center;
-margin:0 0 25px 0;
+position: relative;
+width: calc(100% + 120px);   /* шире самой карточки */
+margin: -10px 0 20px -60px;  /* сдвиг, чтобы выходил одинаково в обе стороны */
+text-align: center;
+z-index: 2;
+overflow: visible;
 }
-  
+
 .bow-image{
-width:100%;
-max-width:560px;
-display:block;
-margin:0 auto;
+width: 100%;
+max-width: none;
+display: block;
+margin: 0 auto;
 }
 
 /* HERO */
